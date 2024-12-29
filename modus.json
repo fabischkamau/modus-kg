@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schema.hypermode.com/modus.json",
+  "endpoints": {
+    "default": {
+      "type": "graphql",
+      "path": "/graphql",
+      "auth": "bearer-token"
+    }
+  },
+  "connections": {
+    "zenquotes": {
+      "type": "http",
+      "baseUrl": "https://zenquotes.io/"
+    }
+  },
+  "models": {
+    "text-generator": {
+      "sourceModel": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "provider": "hugging-face",
+      "connection": "hypermode"
+    },
+    "minilm": {
+      "sourceModel": "sentence-transformers/all-MiniLM-L6-v2",
+      "provider": "hugging-face",
+      "connection": "hypermode"
+    }
+  },
+  "collections": {
+    "myProducts": {
+      "searchMethods": {
+        "searchMethod1": {
+          "embedder": "embed"
+        }
+      }
+    }
+  }
+}
