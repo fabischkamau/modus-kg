@@ -1,6 +1,5 @@
-import { collections, http } from "@hypermode/modus-sdk-as";
-import { models } from "@hypermode/functions-as";
-import { EmbeddingsModel } from "@hypermode/models-as/models/experimental/embeddings";
+import { collections, http, models } from "@hypermode/modus-sdk-as";
+import { EmbeddingsModel } from "@hypermode/modus-sdk-as/models/experimental/embeddings";
 
 
 @json
