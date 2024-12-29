@@ -49,6 +49,7 @@ export function embed(texts: string[]): f32[][] {
   return output.predictions;
 }
 
+//search products
 export function searchProducts(
   product_description: string,
   maxItems: i32,
