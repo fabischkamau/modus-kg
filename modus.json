@@ -7,30 +7,25 @@
       "auth": "bearer-token"
     }
   },
-  "connections": {
-    "zenquotes": {
-      "type": "http",
-      "baseUrl": "https://zenquotes.io/"
-    }
-  },
   "models": {
-    "text-generator": {
-      "sourceModel": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-      "provider": "hugging-face",
-      "connection": "hypermode"
-    },
-    "minilm": {
-      "sourceModel": "sentence-transformers/all-MiniLM-L6-v2",
-      "provider": "hugging-face",
-      "connection": "hypermode"
+    "llm": {
+      "sourceModel": "gpt-4o-mini",
+      "connection": "openai",
+      "path": "v1/chat/completions"
     }
   },
-  "collections": {
-    "myProducts": {
-      "searchMethods": {
-        "searchMethod1": {
-          "embedder": "embed"
-        }
+  "connections": {
+    "neo4jsandbox": {
+      "type": "neo4j",
+      "dbUri": "bolt://54.144.164.215:7687",
+      "username": "neo4j",
+      "password": "{{NEO4J_PASSWORD}}"
+    },
+    "openai": {
+      "type": "http",
+      "baseUrl": "https://api.openai.com/",
+      "headers": {
+        "Authorization": "Bearer {{API_KEY}}"
       }
     }
   }

@@ -3,4 +3,5 @@ export function sayHello(name: string | null = null): string {
 }
 
 // some
-export * from "./quotes";
+export * from "./knowledge-graph";
+export * from "./example-tools";
