@@ -150,7 +150,35 @@ function tool_get_schema(): Tool {
 
 function getDbSchema(): string {
   const schemaQuery = `
-    CALL db.schema.visualization()
+    // Get node labels and their properties
+CALL apoc.meta.data()
+YIELD label, elementType, type, property
+WHERE elementType = 'node'
+WITH collect({
+    label: label,
+    property: property,
+    propertyType: type
+}) as nodes
+
+// Get relationship types, their properties, and connected nodes
+CALL apoc.meta.data()
+YIELD label, other, elementType, type, property
+WHERE elementType = 'relationship'
+WITH nodes, label as relType, other as endNodeLabel, collect({
+    property: property,
+    propertyType: type
+}) as relProperties
+WITH nodes, collect({
+    relationshipType: relType,
+    endNodeLabel: endNodeLabel,
+    properties: relProperties
+}) as relationships
+
+// Return complete schema
+RETURN {
+    nodes: nodes,
+    relationships: relationships
+} as schema
   `;
   const reponse = neo4j.executeQuery(
     HOST_NAME,
