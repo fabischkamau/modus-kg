@@ -10,9 +10,7 @@ GraphRAG is a project designed to enable AI-driven agents to interact seamlessly
 
 Include a preview image or architecture diagram of the project here. Add the following markdown to link an image:
 
-```markdown
 ![Project Preview](/assets/graphql.png)
-```
 
 ## Installation
 
