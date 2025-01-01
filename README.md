@@ -34,7 +34,7 @@ Include a preview image or architecture diagram of the project here. Add the fol
    Create a new Modus app by running:
 
    ```bash
-   modus new
+   npm install
    ```
 
    Follow the prompts to set up the app. Choose AssemblyScript as the language for your app.
