@@ -42,9 +42,9 @@ export function askNeo4jQuestion(
   thread_id: string | null = null,
 ): ThreadResponse {
   const model = models.getModel<OpenAIChatModel>(MODEL_NAME);
-  const loop_limit: u8 = 3;
+  const loop_limit: u8 = 10;
   const result = new ThreadResponse();
-  console.log(thread_id as string);
+  
   // Get or create thread
   if (thread_id === null) {
     result.thread_id = createThread();
