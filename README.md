@@ -18,7 +18,7 @@ Include a preview image or architecture diagram of the project here. Add the fol
 
 - Node.js and npm installed on your machine
 - Modus CLI installed globally
-- Access to a Neo4j database instance
+- Access to a Neo4j database instance with your Knowledge Graph.
 - An OpenAI API key for LLM integration
 
 ### Steps to Install
