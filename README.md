@@ -43,7 +43,8 @@ Include a preview image or architecture diagram of the project here. Add the fol
    Replace the content of `modus.json` in your project directory with the following configuration:
    Add `.env` file and paste your password and Api Keys.
 
-   ```MODUS_NEO4JSANDBOX_NEO4J_PASSWORD=
+   ```bash
+   MODUS_NEO4JSANDBOX_NEO4J_PASSWORD=
    MODUS_OPENAI_API_KEY=
    ```
 
