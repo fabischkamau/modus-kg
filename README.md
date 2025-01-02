@@ -96,3 +96,15 @@ Include a preview image or architecture diagram of the project here. Add the fol
    modus dev
    ```
    Access the local endpoint at `http://localhost:8686/explorer` to interact with the API.
+
+## Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+---
+
+Feel free to reach out if you have questions or need support.
