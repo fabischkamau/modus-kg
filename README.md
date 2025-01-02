@@ -1,8 +1,10 @@
-# Modus AI Agents with Knowledge Graphs
+# Modus AI Agents with Knowledge Graphs | GraphRag
 
 ## Introduction
 
 GraphRAG is a project designed to enable AI-driven agents to interact seamlessly with knowledge graphs. The goal is to simplify how users query and retrieve information from knowledge graphs by using natural language. With features like text-to-Cypher translation, tool-calling, and memory integration, this project demonstrates how AI can make complex graph queries accessible to everyone.
+
+This project is designed to work with any knowledge graph domain and therefore you can use any dataset of your choice. It is Recommended you can use the healthcare dataset or the recomendation in neo4j sandbox if you want to try it out.
 
 ## Project Demo
 
@@ -51,6 +53,7 @@ Include a preview image or architecture diagram of the project here. Add the fol
    Add `.env` file and paste your password and Api Keys.
 
    ```bash
+   MODUS_NEO4JSANDBOX_NEO4J_URI=
    MODUS_NEO4JSANDBOX_NEO4J_PASSWORD=
    MODUS_OPENAI_API_KEY=
    ```
@@ -75,7 +78,7 @@ Include a preview image or architecture diagram of the project here. Add the fol
      "connections": {
        "neo4jsandbox": {
          "type": "neo4j",
-         "dbUri": "bolt://98.81.35.253:7687",
+         "dbUri": "{{NEO4J_URI}}",
          "username": "neo4j",
          "password": "{{NEO4J_PASSWORD}}"
        },

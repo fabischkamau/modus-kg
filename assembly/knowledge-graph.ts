@@ -24,7 +24,6 @@ Always validate the schema before generating queries to ensure accuracy.
 Treat the data from noe4j as your Knowledge Graph.
 Do not use line breaks when constructing your queries.
 Always Limit query results to avoid long responses.
-
 `;
 
 
@@ -44,7 +43,7 @@ export function askNeo4jQuestion(
   const model = models.getModel<OpenAIChatModel>(MODEL_NAME);
   const loop_limit: u8 = 10;
   const result = new ThreadResponse();
-  
+
   // Get or create thread
   if (thread_id === null) {
     result.thread_id = createThread();
