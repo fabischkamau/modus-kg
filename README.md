@@ -30,7 +30,14 @@ Include a preview image or architecture diagram of the project here. Add the fol
    npm install -g @hypermode/modus-cli
    ```
 
-2. **Initialize Your Modus App**
+2. **Clone Repository**
+   Install the Modus CLI using npm:
+
+   ```bash
+   git clone https://github.com/fabischkamau/modus-kg.git
+   ```
+
+3. **Install Pakages**
    Create a new Modus app by running:
 
    ```bash
@@ -39,7 +46,7 @@ Include a preview image or architecture diagram of the project here. Add the fol
 
    Follow the prompts to set up the app. Choose AssemblyScript as the language for your app.
 
-3. **Configure the Project Connection and Models**
+4. **Configure the Project Connection and Models**
    Replace the content of `modus.json` in your project directory with the following configuration:
    Add `.env` file and paste your password and Api Keys.
 
@@ -83,7 +90,7 @@ Include a preview image or architecture diagram of the project here. Add the fol
    }
    ```
 
-4. **Build and Run the App**
+5. **Build and Run the App**
    Navigate to the app directory and run the following command to start the app in development mode:
    ```bash
    modus dev
