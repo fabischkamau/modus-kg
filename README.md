@@ -53,7 +53,6 @@ Include a preview image or architecture diagram of the project here. Add the fol
    Add `.env` file and paste your password and Api Keys.
 
    ```bash
-   MODUS_NEO4JSANDBOX_NEO4J_URI=
    MODUS_NEO4JSANDBOX_NEO4J_PASSWORD=
    MODUS_OPENAI_API_KEY=
    ```
@@ -78,7 +77,7 @@ Include a preview image or architecture diagram of the project here. Add the fol
      "connections": {
        "neo4jsandbox": {
          "type": "neo4j",
-         "dbUri": "{{NEO4J_URI}}",
+         "dbUri": "your bolt connection",
          "username": "neo4j",
          "password": "{{NEO4J_PASSWORD}}"
        },
