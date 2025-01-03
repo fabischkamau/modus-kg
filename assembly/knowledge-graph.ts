@@ -136,6 +136,7 @@ function executeToolCall(toolCall: ToolCall): string {
   }
 }
 
+// get database schema
 function tool_get_schema(): Tool {
   const get_schema = new Tool();
   get_schema.function = {
