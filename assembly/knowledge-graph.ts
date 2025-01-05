@@ -219,6 +219,7 @@ class QueryArguments {
   query: string = "";
 }
 
+//bd
 function executeCustomQuery(string_args: string): string {
   const args = JSON.parse<QueryArguments>(string_args);
   const response = neo4j.executeQuery(
